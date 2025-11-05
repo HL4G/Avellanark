@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clan Avellanark</title>
+    <link rel="stylesheet" href="styles.css" id="theme-style">
+    <link rel="stylesheet" href="ModoOscuro/styles_ModoOscuro.css" disabled id="dark-theme-style">
+</head>
+<body>
+    <button id="theme-toggle" class="theme-toggle">
+        <span class="theme-toggle-icon">🌞</span>
+    </button>
+    <div class="stars-container"></div>
+    
+    <header class="hero-section">
+        <div class="logo-background" id="logoBackground">
+            <img src="LogoClan.png" alt="Clan Avellanark Logo" class="logo-image">
+        </div>
+        <div class="hero-content">
+            <h1 class="main-title">Clan Avellanark</h1>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="intro-section">
+            <div class="intro-text">
+                <p class="quote"><em>"No seguimos el futuro, lo fundamos."</em></p>
+                <p class="description">
+                    Avellanark no es solo un clan: es una comunidad de visionarios que construyen su propio destino bloque a bloque. 
+                    En nuestro mundo, no esperamos a que el futuro llegue, lo creamos. Unidos por la creatividad, el desafío y la pasión 
+                    exploramos, conquistamos y dejamos nuestra marca en cada servidor que pisamos.
+                </p>
+            </div>
+        </section>
+
+        <section class="navigation-section">
+            <h2 class="nav-title">Explora Avellanark</h2>
+            <nav class="nav-grid">
+                <a href="#roles" class="nav-card">
+                    <span class="nav-icon">⚔️</span>
+                    <span class="nav-text">Roles</span>
+                </a>
+                <a href="#servidores" class="nav-card">
+                    <span class="nav-icon">🌐</span>
+                    <span class="nav-text">Servidores</span>
+                </a>
+                <a href="#reglas" class="nav-card">
+                    <span class="nav-icon">📜</span>
+                    <span class="nav-text">Reglas</span>
+                </a>
+                <a href="#formulario" class="nav-card">
+                    <span class="nav-icon">✍️</span>
+                    <span class="nav-text">Formulario</span>
+                </a>
+            </nav>
+        </section>
+
+        <section id="roles" class="content-section collapsible">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">⚔️ Roles</h2>
+                <span class="section-toggle">▼</span>
+            </div>
+            <div class="section-content collapsed">
+                <div id="roles-content" class="roles-container"></div>
+            </div>
+        </section>
+
+        <section id="servidores" class="content-section collapsible">
+    <div class="section-header" onclick="toggleSection(this)">
+        <h2 class="section-title">🌐 Servidores</h2>
+        <span class="section-toggle">▼</span>
+    </div>
+    <div class="section-content collapsed">
+        <div class="server-card">
+            <h3 class="server-title">🏰 Servidor Primogenio — Regorland</h3>
+            <p class="server-description">
+                Mundo original, donde Avellanark fue fundado.  
+                Un reino activo con eventos, construcción y comunidad constante.
+            </p>
+            <a href="https://www.regorland.net/" target="_blank" class="server-button">
+                🌐 Visitar Regorland
+            </a>
+        </div>
+    </div>
+</section>
+
+
+        <section id="reglas" class="content-section collapsible">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">📜 Reglas</h2>
+                <span class="section-toggle">▼</span>
+            </div>
+            <div class="section-content collapsed">
+                <div id="reglas-content" class="reglas-container"></div>
+            </div>
+        </section>
+
+        <section id="formulario" class="content-section collapsible">
+    <div class="section-header" onclick="toggleSection(this)">
+        <h2 class="section-title">✍️ Formulario</h2>
+        <span class="section-toggle">▼</span>
+    </div>
+
+    <div class="section-content collapsed">
+        <div class="formulario-wrapper">
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSdHfr_MXU39sfaiC0RkGFYKIa9_rSMQIjxThkWDg5p9Mf4tFQ/viewform?embedded=true"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                loading="lazy"
+                class="google-form">
+                Cargando…
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<section class="discord-section">
+    <div class="discord-container">
+        <h2 class="discord-title">¡Únete a nuestra comunidad!</h2>
+        <p class="discord-description">Forma parte de Avellanark y conéctate con otros miembros del clan.</p>
+        <a href="https://discord.gg/NMmkDFterk" target="_blank" class="discord-button">
+            <span class="discord-icon">🎮</span>
+            Unirse al Discord
+        </a>
+    </div>
+</section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
